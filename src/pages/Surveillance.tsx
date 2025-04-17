@@ -283,7 +283,7 @@ const SurveillancePage = () => {
                       <SelectValue placeholder="All Rooms" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="">All Rooms</SelectItem>
+                      <SelectItem value="none">All Rooms</SelectItem>
                       {rooms.map((room) => (
                         <SelectItem key={room.id_salle} value={room.id_salle.toString()}>
                           Room {room.nom}
