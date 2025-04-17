@@ -144,7 +144,7 @@ const RoomMap = () => {
                   <SelectValue placeholder="Any capacity" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="">Any capacity</SelectItem>
+                  <SelectItem value="none">Any capacity</SelectItem>
                   <SelectItem value="30">30+ students</SelectItem>
                   <SelectItem value="50">50+ students</SelectItem>
                   <SelectItem value="75">75+ students</SelectItem>
@@ -160,7 +160,7 @@ const RoomMap = () => {
                   <SelectValue placeholder="All faculties" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="">All faculties</SelectItem>
+                  <SelectItem value="all">All faculties</SelectItem>
                   {faculties.map((faculty) => (
                     <SelectItem key={faculty.id_faculte} value={faculty.id_faculte.toString()}>
                       {faculty.nom}
@@ -320,3 +320,4 @@ const RoomMap = () => {
 };
 
 export default RoomMap;
+
